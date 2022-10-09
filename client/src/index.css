@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;300&family=Playfair+Display&display=swap');
+body{
+    background-color: #14181c;
+}
+
+h1 {
+    font-family: 'Inter Tight', sans-serif;    
+    color: white;
+}
+
+.detailSelect {
+    color: white;
+    font-weight: 400;
+}
+
+#filmCard {
+    background-color: #445566;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1%;
+    border-radius: 5px;
+    animation: fade 0.9s ease-in;
+    width: 50%;
+}
+
+#filmDetails {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Inter Tight', sans-serif;
+    gap: 2%;
+    color: #99aabb;
+
+}
+
+#filmDetails ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+    
+}
+
+#loading {
+    width: 50px;
+    height: 50px;
+}
+
+#searchBar {
+    background-color: white;
+    padding: 0.5%;
+    border-radius: 60px;
+    padding: 5px 20px;
+    width: 40%;
+    opacity: 0.5;
+    border: none;
+    margin: 2%;
+    display: flex;
+    align-items: center;
+}
+
+#searchBar input[type="text"] {
+    border: none;
+    width: 100%;
+    outline: none;
+    color: #445566;
+}
+
+#searchBar button[type="submit"] {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+#searchBar button[type="submit"] img {
+    width: 20px;
+    height: 20px;
+
+}
+
+#searchBar:hover {
+    opacity: 1;
+}
+
+#searchPage {
+    height: 100%;
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
